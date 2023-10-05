@@ -12,7 +12,7 @@ import Loader from "./components/Loader";
  * 3. Дізнатись які дані повертає апі і в компоненті MovieListItem підставити відповідні дані замість статичного тексту
  */
 
-const apiUrl = "192.168.1.37/movies";
+const apiUrl = "http://localhost:3000/movies";
 
 function App() {
   const [movies, setMovies] = useState([]);
