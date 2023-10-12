@@ -1,7 +1,7 @@
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-import StarRating from './StarRating';
-import MovieOverview from './MovieOverview';
+import StarRating from "./StarRating";
+import MovieOverview from "./MovieOverview";
 
 function MovieListItem({ movie }) {
   return (
@@ -14,9 +14,9 @@ function MovieListItem({ movie }) {
       <CardContent>
         <StarRating rating={movie.vote_average} />
         <Typography gutterBottom variant="h6" component="h3">
-          Movie Title
+          {movie.title}
         </Typography>
-        <MovieOverview>Movie Overview</MovieOverview>
+        <MovieOverview>{movie.overview}</MovieOverview>
       </CardContent>
     </Card>
   );
